@@ -54,7 +54,7 @@ class GitSearchReplace(object):
 
     BIG_G_REGEX = re.compile(r"[\]G[{][^}]*[}]")
     def calc_big_g(self, big_g_expr):
-        """Transform the special interpolated \G{<python>}"""
+        """Transform the special interpolated \\G{<python>}"""
         parts = []
         prefix = r'\G{'
         oparts = big_g_expr.split(prefix)
